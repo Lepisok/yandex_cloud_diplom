@@ -116,4 +116,64 @@ helm repo index charts
 
 ### img_3
 
-19. ППерейдём в директорию в yandex_cloud_diplom/src/k8s/kube-jenkins-main для разворачиваня jenkins кластера
+19. Перейдём в директорию в yandex_cloud_diplom/src/k8s/kube-jenkins-main для разворачиваня jenkins кластера
+```bash
+kubectl create namespace devops-tools
+kubectl apply -f serviceAccount.yaml
+kubectl create -f volume.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
+Вывод команды
+
+```bash
+NAMESPACE       NAME                                       READY   STATUS         RESTARTS      AGE
+devops-tools    jenkins-bf6b8d5fb-t4p6l                    1/1     Running        0             17m
+ingress-nginx   ingress-nginx-controller-g9jvs             1/1     Running        0             20h
+ingress-nginx   ingress-nginx-controller-wnvmn             1/1     Running        0             20h
+kube-system     calico-kube-controllers-5fcbbfb4cb-qfmzf   1/1     Running        0             20h
+kube-system     calico-node-2d284                          1/1     Running        0             20h
+kube-system     calico-node-52q65                          1/1     Running        0             20h
+kube-system     calico-node-7h8c5                          1/1     Running        0             20h
+kube-system     coredns-77f7cc69db-c2v9h                   1/1     Running        0             20h
+kube-system     coredns-77f7cc69db-hxhmr                   1/1     Running        0             20h
+kube-system     dns-autoscaler-8576bb9f5b-p2nxr            1/1     Running        0             20h
+kube-system     kube-apiserver-node1                       1/1     Running        1             20h
+kube-system     kube-controller-manager-node1              1/1     Running        5 (20h ago)   20h
+kube-system     kube-proxy-2j27b                           1/1     Running        0             20h
+kube-system     kube-proxy-ct2kj                           1/1     Running        0             20h
+kube-system     kube-proxy-flzlc                           1/1     Running        0             20h
+kube-system     kube-scheduler-node1                       1/1     Running        5 (19h ago)   20h
+kube-system     nginx-proxy-node2                          1/1     Running        0             20h
+kube-system     nginx-proxy-node3                          1/1     Running        0             20h
+kube-system     nodelocaldns-7ht8r                         1/1     Running        0             20h
+kube-system     nodelocaldns-94wjd                         1/1     Running        0             20h
+kube-system     nodelocaldns-kxsh4                         1/1     Running        0             20h
+monitoring      alertmanager-main-0                        2/2     Running        0             19h
+monitoring      alertmanager-main-1                        2/2     Running        0             19h
+monitoring      alertmanager-main-2                        2/2     Running        0             19h
+monitoring      blackbox-exporter-d9597b5ff-jmrx5          3/3     Running        0             19h
+monitoring      grafana-748964b847-zqlgv                   1/1     Running        0             19h
+monitoring      kube-state-metrics-674c5fc7f8-cml8p        3/3     Running        0             19h
+monitoring      node-exporter-c44nr                        2/2     Running        0             19h
+monitoring      node-exporter-l8jpb                        2/2     Running        0             19h
+monitoring      node-exporter-x5mb7                        2/2     Running        0             19h
+monitoring      prometheus-adapter-7cc789bfcc-pdqgh        1/1     Running        0             19h
+monitoring      prometheus-adapter-7cc789bfcc-sczbf        1/1     Running        0             19h
+monitoring      prometheus-k8s-0                           2/2     Running        0             19h
+monitoring      prometheus-k8s-1                           2/2     Running        0             19h
+monitoring      prometheus-operator-749b97889c-jfknk       2/2     Running        0             19h
+nginx           nginx-deployment-58c9597774-584fs          1/1     Running        0             18h
+nginx           nginx-deployment-58c9597774-ggzfh          1/1     Running        0             18h
+```
+
+20. Получаем пароль для первой авторизации в jenkins
+```bash
+kubectl exec -it {name pod} cat /var/jenkins_home/secrets/initialAdminPassword -n devops-tools
+```
+
+21. Необходимо установить openjdk-11-jdk для работы подключения с помощью ssh
+```bash
+apt-get install openjdk-11-jdk
+```
+### img_4.png

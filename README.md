@@ -177,3 +177,5 @@ kubectl exec -it {name pod} cat /var/jenkins_home/secrets/initialAdminPassword -
 apt-get install openjdk-11-jdk
 ```
 ### img_4.png
+
+22. 

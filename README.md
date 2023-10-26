@@ -196,7 +196,7 @@ apt-get install openjdk-11-jdk
 [Репозиторий Jenkins](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/k8s/kube-jenkins-main)  
 [Репозиторий тестового приложения](https://github.com/Lepisok/webserver)
 
-[DockerHub](https://hub.docker.com/repository/docker/lepisok/webserver/general)
+[DockerHub](https://hub.docker.com/repository/docker/lepisok/webserver/general)  
 [GRAFANA](http://84.201.153.173/)  
 [JENKINS](http://84.201.153.173:32000/)  
 [TEST_APP](http://84.201.153.173:31497/)  

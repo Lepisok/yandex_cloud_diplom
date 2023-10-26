@@ -190,8 +190,8 @@ apt-get install openjdk-11-jdk
 
 # Репозитории, ссылки
 
-[Конфиги разворачивания s3 и vm](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/terraform)
-[Репозиторий kuberspray для разворачивания k8s]  
-[Репозиторий для разворачиваня кластера мониторинка]  
-[Репозиторий Jenkins]  
-[Репозиторий тестового приложения]  
+[Конфиги разворачивания s3 и vm](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/terraform)  
+[Ansible kuberspray для разворачивания k8s](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/ansible/inventory)  
+[Репозиторий для разворачиваня кластера мониторинка](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/k8s/kube-prometheus-main)  
+[Репозиторий Jenkins](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/k8s/kube-jenkins-main)  
+[Репозиторий тестового приложения](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/k8s/kube-jenkins-main)

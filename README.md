@@ -186,7 +186,7 @@ apt-get install openjdk-11-jdk
 
 23. Вывод kubectl get pods -A
 
-[img_7.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_7.png)
+![img_7.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_7.png)
 
 # Репозитории, ссылки
 

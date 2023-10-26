@@ -194,4 +194,8 @@ apt-get install openjdk-11-jdk
 [Ansible kuberspray для разворачивания k8s](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/ansible/inventory)  
 [Репозиторий для разворачиваня кластера мониторинка](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/k8s/kube-prometheus-main)  
 [Репозиторий Jenkins](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/k8s/kube-jenkins-main)  
-[Репозиторий тестового приложения](https://github.com/Lepisok/yandex_cloud_diplom/tree/main/src/k8s/kube-jenkins-main)
+[Репозиторий тестового приложения](https://github.com/Lepisok/webserver)
+
+[GRAFANA](http://84.201.153.173/)
+[JENKINS](http://84.201.153.173:32000/)
+[TEST_APP](http://84.201.153.173:31497/)

@@ -69,7 +69,7 @@ kubectl apply -f manifests/
 ```
 12. Grafana успешно развернута и выводит данные на dashboard http://84.201.153.173/
 
-### img_1
+![img_1.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_1.png)
 
 13. Тестовое приложение подготовлено
 https://github.com/Lepisok/test_deploy
@@ -104,7 +104,7 @@ monitoring    prometheus-operator     ClusterIP   None            <none>        
 nginx         nginx-service           NodePort    10.233.24.187   <none>        80:31497/TCP                   72s
 ```
 
-### img_2
+![img_2.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_2.png)
 
 17. Собираем архив и геренируем индекс файла
 ```bash
@@ -114,7 +114,7 @@ helm repo index charts
 
 18. Создаем репозиторий на https://artifacthub.io/
 
-### img_3
+![img_3.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_3.png)
 
 19. Перейдём в директорию в yandex_cloud_diplom/src/k8s/kube-jenkins-main для разворачиваня jenkins кластера
 ```bash
@@ -176,17 +176,17 @@ kubectl exec -it {name pod} cat /var/jenkins_home/secrets/initialAdminPassword -
 ```bash
 apt-get install openjdk-11-jdk
 ```
-### img_4.png
+![img_4.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_4.png)
 
 22. Было безуспешно запушено 200 джоб, но наконец то заработало. Скриншот успешной джобы и скриншот приложения. Успешная версия 7
 
-### img_5.png
+![img_5.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_5.png)
 
-### img_6.png
+![img_6.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_6.png)
 
 23. Вывод kubectl get pods -A
 
-### img_7.png
+[img_7.png](https://github.com/Lepisok/yandex_cloud_diplom/blob/main/img/img_7.png)
 
 # Репозитории, ссылки
 
